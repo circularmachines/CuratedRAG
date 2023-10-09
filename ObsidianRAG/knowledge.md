@@ -1,0 +1,1 @@
+Domain specific information. Referred to as knowledge because of the term [[knowledge management]]

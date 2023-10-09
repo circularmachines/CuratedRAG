@@ -1,0 +1,1 @@
+A folder inside [[Obsidian]] and file system that contains the [[queries]]

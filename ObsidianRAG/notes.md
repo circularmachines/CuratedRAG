@@ -1,0 +1,1 @@
+A piece of [[knowledge]] in Obsidian. Is mirroring a .md file

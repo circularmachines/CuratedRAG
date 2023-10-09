@@ -1,0 +1,1 @@
+The process of retrieving the [[knowledge]] needed to [[respond]] to [[queries]] 

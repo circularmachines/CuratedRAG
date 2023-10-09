@@ -1,0 +1,1 @@
+A collection of notes in Obsidian. Basically a folder on your computer accessed by Obsidian and the [[python app]]
