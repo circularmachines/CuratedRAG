@@ -1,4 +1,4 @@
-Curated RAG is a simple [prototype](/vault/protoype.md) that showcases how to use [Obsidian](/vault/Obsidian.md) to create [LLM](/vault/LLM.md) driven [chatbot](/vault/chatbot.md) instances. The plan is to make an [open source](/vault/open%20source.md) [project](/vault/project.md) out of it.
+Curated RAG is a simple [prototype](/vault/prototype.md) that showcases how to use [Obsidian](/vault/Obsidian.md) to create [LLM](/vault/LLM.md) driven [chatbot](/vault/chatbot.md) instances. The plan is to make an [open source](/vault/open%20source.md) [project](/vault/project.md) out of it.
 
 The idea is based on an [Iterative process](/vault/Iterative%20process.md).
 
