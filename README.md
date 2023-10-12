@@ -5,5 +5,7 @@ The idea is based on an [Iterative process](/vault/Iterative%20process.md).
 There is a [python app](/vault/python%20app.md) running in the background accessing the md files in the [vault](/vault/vault.md).
 
 [Extremely Quick Start](/vault/Extremely%20Quick%20Start.md)
+
 [Very Quick Start](/vault/Very%20Quick%20Start.md)
+
 [Quick Start](/vault/Quick%20Start.md)
