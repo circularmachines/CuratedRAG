@@ -2,16 +2,8 @@ import time
 import os
 import glob
 
-#OPENAI
 import openai
-openai.api_key ="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"
-
-
-def read_from_file():
-    with open("data.json", 'r') as f:
-        data = json.readlines()  
-    return data#items
-
+openai.api_key = os.getenv("OPENAI_TOKEN")
 
 def chatgpt(messages):
     
@@ -19,38 +11,38 @@ def chatgpt(messages):
         #model="gpt-3.5-turbo",
         model="gpt-4",
         temperature=0.3,
-        messages=messages,
-
-    )
-    
+        messages=messages)
+  
     return response['choices'][0]["message"]
 
-
-
-
 def get_note(q,s):
-    
     path="db/"+s+".md"
     with open(path, 'r') as f:
         data = f.readlines()
+        
     out="Query: "+q+"\n"
 
     out+=s+":\n"
+    
     for d in data:
         out+=d
-    print(out)
+
     return out
 
 def ask(query):
-    #query = text_box1.get("1.0", tk.END)
-    messages=[  {"role": "system", "content":"""You will be given a question, and a text from an Obsidian.md note.
+    
+    system_prompt="""
+You will be given a question, and a text from an Obsidian.md note.
 Your job is to request links from the obsidian note to learn more about the subject in order to answer the question, links are inside [[double brackets]]
 Please don't request links more than once, since it will not give you any new information. 
 Respond in one of the follow ways:
 [[one single link]]
 or, if you are ready to answer the query;
-Answer: ..."""},
-                {"role": "user", "content": get_note(query,"circularmachines")}]
+Answer: ..."""
+    
+    messages=[  {"role": "system", "content": system_prompt},
+                {"role": "assistant", "content": "[[index]]"},
+                {"role": "user", "content": get_note(query,"index")}]
     
     while True:
         mess=chatgpt(messages)
@@ -61,7 +53,7 @@ Answer: ..."""},
             break
     
         stripped=mess["content"].strip("[]")
-        print(stripped)
+        
         try:
             note=get_note(query,stripped)
             messages.append(mess)
@@ -69,10 +61,6 @@ Answer: ..."""},
             write_file(messages)
         except:
             None    
-
-
-def bold(s):
-    return "**"+s+"**"
 
 def write_file(messages):
     global latest_file
@@ -86,25 +74,18 @@ def write_file(messages):
             if "Answer:" in m["content"]:
                 md+="## Answer\n"
                 md+=m["content"][8:]+"\n"
+                print(m["content"][8:])
         if m["role"]=="user":
             md+="\n".join(m["content"].split("\n")[2:])+"\n"
             
     
     with open(latest_file, 'w') as f:
-        f.write(md)#.replace("\n","  "))
+        f.write(md.replace("#run","run"))
         
 
 
 def get_latest_modified_file(path):
-    """
-    Get the path of the latest modified .md file in the specified path.
 
-    Parameters:
-    - path: str, the path to the directory to monitor
-
-    Returns:
-    - str, path of the latest modified .md file
-    """
     # Find all .md files in the specified path
     files = glob.glob(os.path.join(path, "*.md"))
     
@@ -120,17 +101,16 @@ def get_latest_modified_file(path):
   
     return latest_file,data
 
+print("running...")
 
 while True:
-    latest_file, data = get_latest_modified_file('db/Querys')
+    latest_file, data = get_latest_modified_file('db/queries')
+    
     if "#run" in data:
         open(latest_file, 'w').close()
         file_name=os.path.normpath(latest_file).split(os.path.sep)[-1]
         query=os.path.normpath(latest_file).split(os.path.sep)[-1][:-3].replace("‽","?")
         print(query)
         ask(query)
-    
-        
-#print(f"The latest modified file is: {latest_file}")
-#print(data)
+
     time.sleep(1)

@@ -1,0 +1,1 @@
+meta is describing the concept meta inside a note called meta

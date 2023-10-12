@@ -1,0 +1,3 @@
+  
+Obsidian is a popular note-taking and knowledge management application that utilizes markdown for note creation and editing. It is renowned for its unique approach to note-taking, which emphasizes linking between notes to create a personal knowledge graph. Users create notes, which can then be interlinked through wiki-style links, allowing the formation of a network of information.
+(From ChatGPT)

@@ -4,43 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "9129b88b7290e2ad",
+        "id": "936b3d2eb6bec38d",
         "type": "tabs",
         "children": [
           {
-            "id": "262d5f43ad55d232",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "fcb2da90e4c31790",
+            "id": "2ca6bb1af2069aea",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Iterative process.md",
+                "file": "Quick Start.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "e60f2d0fb180293a",
+            "id": "c4d8f80baa13adbc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "install.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -106,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "install.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "index.md",
+                "file": "install.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +128,7 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": false
               }
             }
           },
@@ -146,12 +138,11 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md"
+                "file": "install.md"
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -167,34 +158,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e60f2d0fb180293a",
+  "active": "c4d8f80baa13adbc",
   "lastOpenFiles": [
-    "instructions.md",
+    "Quick Start.md",
     "index.md",
-    "query file.md",
+    "Very Quick Start.md",
+    "README.md",
+    "Extremely Quick Start.md",
+    "install.md",
+    "queries/What python libraries do I need‽.md",
     "python app.md",
-    "file name.md",
-    "retrieval.md",
-    "response.md",
-    "respond.md",
-    "queries folder.md",
+    "queries/-copy me‽.md",
+    "queries/I want a quick start!.md",
+    "queries/why do you need a python program‽.md",
     "run command.md",
-    "vault.md",
-    "Iterative process.md",
-    "chatbot.md",
-    "Conventional RAG.md",
-    "knowledge management.md",
-    "Obsidian.md",
-    "Obsidian RAG.md",
-    "contact circularmachines.md",
-    "prototype.md",
-    "RAG.md",
-    "knowledge.md",
-    "Obsidian [[RAG.md",
-    "LLM.md",
-    "questions and answers.md",
-    "queries.md",
-    "notes.md",
+    "Chat API.md",
+    "queries/Why do you call it queries instead of questions‽.md",
+    "queries/What's the long term vision for Curated RAG‽.md",
+    "queries/What is obsidian‽.md",
+    "queries/Explain curated RAG.md",
+    "chatbots.md",
+    "environment variables.md",
+    "set environment variables persistently on Windows.md",
+    "set environment variables persistently on Linux or Mac.md",
+    "set environment variables temporarily on Windows.md",
+    "set environment variables temporarily on Linux or Mac.md",
+    "set environment variables temporarily.md",
+    "project.md",
+    "roadmap.md",
+    "queries",
     "Pasted image 20231009155216.png",
     "Pasted image 20231009155339.png"
   ]
