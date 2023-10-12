@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "install.md",
+                "file": "queries/I have a Mac, how do make the open ai key work‽.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "install.md",
+                "file": "queries/I have a Mac, how do make the open ai key work‽.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "install.md",
+                "file": "queries/I have a Mac, how do make the open ai key work‽.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "install.md"
+                "file": "queries/I have a Mac, how do make the open ai key work‽.md"
               }
             }
           }
@@ -160,15 +160,16 @@
   },
   "active": "c4d8f80baa13adbc",
   "lastOpenFiles": [
+    "queries/-copy me‽.md",
+    "queries/I have a Mac, how do make the open ai key work‽.md",
+    "install.md",
     "Quick Start.md",
     "index.md",
     "Very Quick Start.md",
     "README.md",
     "Extremely Quick Start.md",
-    "install.md",
     "queries/What python libraries do I need‽.md",
     "python app.md",
-    "queries/-copy me‽.md",
     "queries/I want a quick start!.md",
     "queries/why do you need a python program‽.md",
     "run command.md",
@@ -185,7 +186,6 @@
     "set environment variables temporarily on Linux or Mac.md",
     "set environment variables temporarily.md",
     "project.md",
-    "roadmap.md",
     "queries",
     "Pasted image 20231009155216.png",
     "Pasted image 20231009155339.png"

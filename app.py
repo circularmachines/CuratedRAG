@@ -16,7 +16,7 @@ def chatgpt(messages):
     return response['choices'][0]["message"]
 
 def get_note(q,s):
-    path="db/"+s+".md"
+    path="vault/"+s+".md"
     with open(path, 'r') as f:
         data = f.readlines()
         
@@ -104,7 +104,7 @@ def get_latest_modified_file(path):
 print("running...")
 
 while True:
-    latest_file, data = get_latest_modified_file('db/queries')
+    latest_file, data = get_latest_modified_file('vault/queries')
     
     if "#run" in data:
         open(latest_file, 'w').close()
