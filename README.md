@@ -9,3 +9,5 @@ There is a [python app](/vault/python%20app.md) running in the background access
 [Very Quick Start](/vault/Very%20Quick%20Start.md)
 
 [Quick Start](/vault/Quick%20Start.md)
+
+![GIF](https://github.com/circularmachines/CuratedRAG/blob/main/crag.gif)
